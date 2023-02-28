@@ -2,12 +2,10 @@
     return <h1>Hello Benson</h1>
 } */
 
-const Greet = (props) => {
-    console.log(props);
+const Greet = ({name, hiddenName}) => {
     return (
         <div>
-            <h1>Hello {props.name}</h1>
-            {props.children}
+            <h1>Hello {name}, AKA {hiddenName}</h1>
         </div>
     )
 }
